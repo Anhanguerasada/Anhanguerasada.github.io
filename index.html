@@ -5,13 +5,19 @@
 	<title>SADA v2.0 - Sistema de Assinatura de Documentos Kroton</title>
 		
 		
-	<script>
+<script type="text/javascript">
 
-	function funcao1()
-	{
-	alert("Desculpe! Estamos temporariamente fora do ar, por favor tente mais tarde!");
+function insereTexto(){
+
+if (form.texto.value == "12387456")
+
+	{document.getElementById('divTeste').innerHTML = 'Aluno: Gilliardi Ferreira de Lima - RA: 339.686.812.359 - Assinatura: 05/10/2018 - Status: Estudante/Administração-N - 8°-Semestre';}
+	else { 
+  	alert("Cod não encontrado, por favor verifique!")
+	{document.getElementById('divTeste').innerHTML = 'Não Encontrado';}
 	}
-	</script>
+}
+</script>
 		
 	</head>
 	
@@ -41,20 +47,22 @@
 
 
 
-	<from class="pesquisa">
+<form name="form">
+	
+	<p aling="center" > <input type="search" id="texto" maxlength="32" size=95>
 		
-		<p aling="center" > <input type="search" id="texto" maxlength="32" size=95>
-
-
 	<br/><br/>
 
-
-		<div class="button">
-		<input type="button" onclick="funcao1()" value="Pesquisar" />
-		</div>
+	<input type='button' onclick='insereTexto()' value='Inserir texto'/><br/>
 	
 	</from>
-	
-	
+		
+		
+<H5>
+<B>
+	<div id="divTeste"> 
 
+</H6>
+</B>
+	
 </html>
